@@ -1,1 +1,1 @@
-# polilab
+# Recruitment task
