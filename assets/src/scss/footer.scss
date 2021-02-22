@@ -1,0 +1,75 @@
+@import "variables";
+
+.footer {
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
+
+  .footer__container {
+    width: 100%;
+    max-width: $width_container;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    @media screen and (max-width: $medium-screen){
+      width: 90%;
+      justify-content: space-around;
+    }
+
+    .footer__box {
+      flex: 0 20%;
+
+      @media screen and (max-width: $medium-screen){
+        flex: 0 45%;
+      }
+
+      &:first-child {
+        @media screen and (max-width: $medium-screen){
+          flex: 0 90%;
+        }
+        img {
+          width: 180px;
+          height: 63px;
+          object-fit: contain;
+
+          @media screen and (max-width: $screen-mobile){
+            margin: 0 auto;
+            display: block;
+          }
+        }
+      }
+
+      &:last-child {
+        img {
+          width: 17px;
+          height: 32px;
+          object-fit: contain;
+        }
+      }
+      .widgettitle {
+        font-size: 16px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #9dcd48;
+      }
+      .textwidget {
+        font-size: 16px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        color: #9e9fa2;
+
+        strong {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
